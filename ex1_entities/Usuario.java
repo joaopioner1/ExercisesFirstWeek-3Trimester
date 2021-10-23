@@ -46,7 +46,7 @@ public class Usuario {
 
 	public Postagem buscaPost(String valor) {
 		for (int i = 0; i < postagens.size(); i++) {
-			if (valor.equals(String.valueOf(postagens.get(i)))) {
+			if (postagens.get(i).getConteudo().contains(valor)) {
 				return postagens.get(i);
 			}
 		}

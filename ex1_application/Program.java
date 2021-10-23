@@ -20,6 +20,8 @@ public class Program {
 		System.out.println(u1.getLogin());
 		System.out.println(u1.buscaPost("We're dancing! Come with us"));
 		System.out.println(u1.getPost(2));
+		System.out.println(u1.buscaPost("We're going! Come with us"));
+
 	}
 
 }
