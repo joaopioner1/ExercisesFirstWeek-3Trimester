@@ -41,7 +41,7 @@ public class Estudante {
 
 	@Override
 	public String toString() {
-		return "Estudante [nome=" + nome + ", dataNasc=" + dataNasc + ", lista_notas=" + lista_notas + "]";
+		return "Estudante [nome=" + nome + ", dataNasc=" + dataNasc + ", lista_notas=" + lista_notas + "]\n";
 	}
 	
 }
