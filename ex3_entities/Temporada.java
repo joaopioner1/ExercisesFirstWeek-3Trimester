@@ -52,4 +52,11 @@ public class Temporada {
 	public int getTamanho() {
 		return list_eps.size();
 	}
+
+	@Override
+	public String toString() {
+		return "Temporada [titulo=" + titulo + ", list_eps=" + list_eps + "]";
+	}
+	
+	
 }

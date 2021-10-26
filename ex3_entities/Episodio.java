@@ -3,7 +3,7 @@ package ex3_entities;
 import java.time.Duration;
 
 public class Episodio {
-	
+
 	private final String titulo;
 	private final Duration duracao;
 	private boolean assistido;
@@ -25,8 +25,14 @@ public class Episodio {
 	public boolean isAssistido() {
 		return assistido;
 	}
-	
+
 	public boolean assistir() {
 		return assistido = true;
 	}
+
+	@Override
+	public String toString() {
+		return "Episodio [titulo=" + titulo + ", duracao=" + duracao + ", assistido=" + assistido + "]";
+	}
+
 }
