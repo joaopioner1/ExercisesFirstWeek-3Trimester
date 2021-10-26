@@ -1,5 +1,8 @@
 package ex3_entities;
 
-public class Serie {
+import java.time.Duration;
 
+public class Serie {
+	
+	
 }
