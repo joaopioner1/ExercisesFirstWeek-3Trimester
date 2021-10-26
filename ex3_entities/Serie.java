@@ -43,10 +43,31 @@ public class Serie {
 		return this.list_temps;
 	}
 
+	public boolean isAssistido() {
+		int count = 0;
+		for (Temporada t : list_temps) {
+			if (t.isAssistido() == true) {
+				count++;
+			} 
+		}
+		if (count == list_temps.size()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public void assistirProximo() {
+		for (int i = 0; i < list_temps.size(); i++) {
+			if (list_temps.get(i).getEpisodio(i).isAssistido() == false) {
+				list_temps.get(i).getEpisodio(i).assistir();
+				break;
+			}
+		}
+	}
 	@Override
 	public String toString() {
 		return "Serie [titulo=" + titulo + ", nota=" + nota + ", list_temps=" + list_temps + "]";
 	}
-	
-	
 }
