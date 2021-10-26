@@ -8,11 +8,12 @@ public class Estudante {
 	private final String nome;
 	private final LocalDate dataNasc;
 	
-	public final ArrayList<Double> lista_notas = new ArrayList<>();
+	public final ArrayList<Double> lista_notas;
 
 	public Estudante(String nome, LocalDate dataNasc) {
 		this.nome = nome;
 		this.dataNasc = dataNasc;
+		this.lista_notas = new ArrayList<>();
 	}
 
 	public String getNome() {
